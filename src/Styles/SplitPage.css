@@ -1,0 +1,39 @@
+/* SplitPage.css */
+
+.split-container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .left-pane,
+  .right-pane {
+    flex: 1; /* Take equal width */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  .left-pane {
+    background-color: #f0f0f0; /* Light grey background for left pane */
+    border-right: 1px solid #ccc; /* Optional border for separation */
+  }
+  
+  .right-pane {
+    background-color: #ffffff; /* White background for right pane */
+  }
+  
+  .content {
+    padding: 20px; /* Add padding to content */
+  }
+  
+  /* Media queries for mobile devices */
+  @media (max-width: 768px) {
+    .split-container {
+      flex-direction: column; /* Stack panes vertically on mobile */
+    }
+  
+    .left-pane,
+    .right-pane {
+      border-right: none; /* Remove border on mobile */
+      border-bottom: 1px solid #ccc; /* Add bottom border for separation */
+    }
+  }
+  

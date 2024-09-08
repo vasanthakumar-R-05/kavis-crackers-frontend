@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+ul{
+    list-style: none;
+}
+ul li{
+    color: rgb(195, 58, 195);
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Noto Serif';
+    margin-bottom: 10px;
+}
+.contact-details{
+    padding: 0%;
+    margin: 0%;
+}
+ul li:hover{
+    color: black;
+}
+.foot,.cright{
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(195, 58, 195);
+    font-family: Poppins,sans-serif;font-family: Poppins,sans-serif;
+}
+.foot:hover{
+    color: rgba(0, 0, 0, 0.884);
+}
+
+.description{
+    color: white;
+    font-weight: 500;
+    font-family: Poppins,sans-serif;
+    margin-bottom: 10px;
+}
+.footer-background{
+    background-color: black;
+}
+.footer-nav-title{
+    padding: 0%;
+    margin: 0%;
+    color: white;
+}
+.social-text{
+color:rgb(195, 58, 195);
+}
