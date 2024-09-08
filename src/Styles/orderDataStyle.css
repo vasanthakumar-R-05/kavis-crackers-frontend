@@ -1,24 +1,24 @@
 .container {
-  display: flex; /* Flexbox for side-by-side layout */
-  justify-content: space-between; /* Space out the elements */
-  align-items: flex-start; /* Align items to the start */
-  gap: 20px; /* Gap between the two sections */
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  display: flex; 
+  justify-content: space-between;
+  align-items: flex-start; 
+  gap: 20px; 
+  box-sizing: border-box; 
 }
 
 .left-section {
-  flex: 1; /* Takes remaining space */
-  margin-right: 20px; /* Margin to prevent touching form */
-  max-width: 45%; /* Max width to avoid overflow */
-  overflow-y: auto; /* Ensure overflow is handled */
+  flex: 1;
+  margin-right: 20px;
+  max-width: 45%; 
+  overflow-y: auto; 
 }
 
 .right-section {
   padding: 0%;
   margin: 0%;
-  flex: 1; /* Takes remaining space */
-  max-width: 45%; /* Max width to avoid overflow */
-  overflow-y: auto; /* Ensure overflow is handled */
+  flex: 1; 
+  max-width: 45%;
+  overflow-y: auto; 
 }
 
 .feedback-form {
@@ -28,14 +28,14 @@
   padding-top: 0%;
   border-radius: 8px;
   width: 100%;
-  box-sizing: border-box; /* Include padding in width calculation */
+  box-sizing: border-box; 
 }
 
 .feedback-form h2 {
   margin-top: 20px;
   margin-bottom: 10px;
   color: #030303;
-  font-size: 1.8rem; /* Slightly larger font for better visibility */
+  font-size: 1.8rem; 
 }
 
 .feedback-form .form-group {
@@ -48,7 +48,7 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box; /* Ensure padding is accounted for */
+  box-sizing: border-box; 
 }
 
 .feedback-form textarea {
@@ -64,7 +64,7 @@
   border-radius: 4px;
   cursor: pointer;  
   font-size: 16px;
-  width: 100%; /* Full width for better alignment */
+  width: 100%; 
   margin-top: 10px;
 }
 .coupon-container {
