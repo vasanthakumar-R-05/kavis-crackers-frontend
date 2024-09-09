@@ -58,16 +58,16 @@ function App() {
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
   console.log(data);
-  useEffect(() => {
-    const savedCart = localStorage.getItem("cart");
-    if (savedCart) {
-      setCart(JSON.parse(savedCart));
-    }
-  }, []);
+  // useEffect(() => {
+  //   const savedCart = localStorage.getItem("cart");
+  //   if (savedCart) {
+  //     setCart(JSON.parse(savedCart));
+  //   }
+  // }, []);
 
-  useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cart));
-  }, [cart]);
+  // useEffect(() => {
+  //   localStorage.setItem("cart", JSON.stringify(cart));
+  // }, [cart]);
 
   useEffect(() => {
     const calculateTotal = () => {
