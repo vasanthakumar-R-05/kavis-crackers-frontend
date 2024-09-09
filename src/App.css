@@ -60,7 +60,7 @@
     border-left: none;
     height: auto;
   }
-} */
+} 
 .body{
   font-family: 'Noto Serif';
   background-color: black;
@@ -88,36 +88,35 @@
   margin-right: 10px;
   border: solid black;
   border-radius: 8px;
-  width: 60%; /* Adjust the width as needed */
-  overflow-y: scroll; /* Enable vertical scrolling */
+  width: 60%; 
+  overflow-y: scroll;
   padding: 8px;
-  scrollbar-width: none; /* For Firefox */
-  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
 }
 
 .left-side::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Opera */
+  display: none; 
 }
 
 .right-side {
   border: 2px solid #000000;
   border-radius: 10px;
   padding-left: 12px;
-  width: 40%; /* Adjust the width as needed */
+  width: 40%; 
   border-left: 1px solid #ccc;
-  overflow-y:scroll; /* Enable vertical scrolling */
+  overflow-y:scroll;
   box-sizing: border-box;
-  scrollbar-width: none; /* For Firefox */
-  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
 }
-
 .right-side::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Opera */
+  display: none; 
 }
 .catname {
   background-color: rgb(241, 236, 241);
-  color: #010101; /* White text color */
-  font-size: 8px; /* Adjust the font size as needed */
+  color: #010101; 
+  font-size: 8px;
   text-align: left;
   padding-top: 2px;
   padding: 2px; /* Rounded corners */
