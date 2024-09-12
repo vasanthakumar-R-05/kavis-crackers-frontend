@@ -5,6 +5,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "./Component/Card";
 import OrderData from "./Component/OrderData";
 import logo from "./Assets/kavilogo.png";
+import email from "./Assets/email icon.svg";
+import phone from "./Assets/telephone-icon.svg";
+import what from "./Assets/whatsapp-icon.svg";
+import ints from "./Assets/instagram icon.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -57,17 +61,6 @@ function App() {
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
-  console.log(data);
-  // useEffect(() => {
-  //   const savedCart = localStorage.getItem("cart");
-  //   if (savedCart) {
-  //     setCart(JSON.parse(savedCart));
-  //   }
-  // }, []);
-
-  // useEffect(() => {
-  //   localStorage.setItem("cart", JSON.stringify(cart));
-  // }, [cart]);
 
   useEffect(() => {
     const calculateTotal = () => {
@@ -100,16 +93,16 @@ function App() {
       <div style={{ display: "flex", justifyContent: "center" }}>
         <div className="social">
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <a href="#"><FontAwesomeIcon icon={faWhatsapp} size="2x" style={{ color: "#63E6BE" }} /></a>
-          </div>
-          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <a href="#"><FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: "#c46212" }} /></a>
+            <a href="#"><img src={what} width="30px" height="30px"></img></a>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <a href="#"><FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: "#74C0FC" }} /></a>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <a href="#"><FontAwesomeIcon icon={faEnvelope} size="2x" style={{ color: "#74C0FC" }} /></a>
+            <a href="#"><img src={ints} width="30px" height="30px"></img></a>
+          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <a href="#"><img src={email} width="30px" height="30px"></img></a>
           </div>
         </div>
       </div>
@@ -122,18 +115,20 @@ function App() {
           {Categories &&
             Categories.slice(1).map((category, categoryIndex) => (
               <div key={categoryIndex} className="categorycss">
-                <div className="catname">
+                <div className="catname"
+                onClick={() => toggleCategory(category)}
+                >
                   <div className="aro">
                     <div>
-                      <h5 onClick={() => toggleCategory(category)} className="cat" style={{ padding: "10px", fontWeight: "10px" }}>
+                      <h6 style={{ padding: "10px", fontWeight: "10px" }}>
                         {category}
-                      </h5>
+                      </h6>
                     </div>
-                    <div className="arrow" style={{ width: "15px" }}>
+                    <div className="arrow" >
                       {expandedCategory === category ? (
-                        <FontAwesomeIcon icon={faChevronUp} onClick={() => toggleCategory(category)} className="aro" />
+                        <FontAwesomeIcon icon={faChevronUp}  size="1x"onClick={() => toggleCategory(category)} className="aro" />
                       ) : (
-                        <FontAwesomeIcon icon={faChevronDown} onClick={() => toggleCategory(category)} className="aro" />
+                        <FontAwesomeIcon icon={faChevronDown}  size="1x" onClick={() => toggleCategory(category)} className="aro" />
                       )}
                     </div>
                   </div>
@@ -164,7 +159,7 @@ function App() {
         
       </div >
       <div className=" roles">
-      <center style={{padding:"20px",color: 'white' }}>
+      <center style={{padding:"20px",color: 'white',paddingTop:"60px"}}>
       <p>&copy; 2024 KAVI Crackers,Inc. All rights reserved</p></center>
       </div>
     </div>
