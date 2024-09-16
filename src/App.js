@@ -96,9 +96,6 @@ function App() {
             <a href="#"><img src={what} width="30px" height="30px"></img></a>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <a href="#"><FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: "#74C0FC" }} /></a>
-          </div>
-          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <a href="#"><img src={ints} width="30px" height="30px"></img></a>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
