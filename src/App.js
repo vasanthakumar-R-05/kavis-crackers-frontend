@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -6,7 +5,6 @@ import Card from "./Component/Card";
 import OrderData from "./Component/OrderData";
 import logo from "./Assets/kavilogo.png";
 import email from "./Assets/email icon.svg";
-import phone from "./Assets/telephone-icon.svg";
 import what from "./Assets/whatsapp-icon.svg";
 import ints from "./Assets/instagram icon.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -94,9 +92,6 @@ function App() {
         <div className="social">
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <a href="#"><img src={what} width="30px" height="30px"></img></a>
-          </div>
-          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <a href="#"><FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: "#74C0FC" }} /></a>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <a href="#"><img src={ints} width="30px" height="30px"></img></a>
