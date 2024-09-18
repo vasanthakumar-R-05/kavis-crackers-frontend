@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import { FaSquarePhone } from "react-icons/fa6";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "./Component/Card";
 import OrderData from "./Component/OrderData";
@@ -91,13 +92,16 @@ function App() {
       <div style={{ display: "flex", justifyContent: "center" }}>
         <div className="social">
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <a href="#"><img src={what} width="30px" height="30px"></img></a>
+            <a href="https://wa.me/9894173873" target="_blank"><img src={what} width="30px" height="30px"></img></a>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <a href="#"><img src={ints} width="30px" height="30px"></img></a>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <a href="#"><img src={email} width="30px" height="30px"></img></a>
+            <a href="mailto:kaviscrackers.cbe@email.com"><img src={email} width="30px" height="30px"></img></a>
+          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <a href="tel:+919894173873"><FaSquarePhone style={{width:"30px", height: "30px"}}/></a>
           </div>
         </div>
       </div>

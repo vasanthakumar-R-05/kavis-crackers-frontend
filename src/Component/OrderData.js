@@ -66,10 +66,10 @@ const OrderData = ({ total, coupons, cart,setTotal }) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
   
-    if (total.totalPrice - discountPrice < 3000) {
-      minimumAlert();
-      return;
-    }
+    // if (total.totalPrice - discountPrice < 3000) {
+    //   minimumAlert();
+    //   return;
+    // }
   
     // Show loader
     Swal.fire({
@@ -82,7 +82,7 @@ const OrderData = ({ total, coupons, cart,setTotal }) => {
     });
   
     try {
-      const response = await axios.post("https://kavi-crackers.onrender.com/placeOrder", {
+      const response = await axios.post("http://localhost:8000/placeOrder", {
         cart,
         userData,
         totalPrice: total.totalPrice,
