@@ -82,7 +82,7 @@ const OrderData = ({ total, coupons, cart,setTotal }) => {
     });
   
     try {
-      const response = await axios.post("http://localhost:8000/placeOrder", {
+      const response = await axios.post("https://kavi-crackers.onrender.com/placeOrder", {
         cart,
         userData,
         totalPrice: total.totalPrice,
